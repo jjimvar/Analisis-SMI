@@ -1,1 +1,1 @@
-A través de este trabajo, se trata de analizar los efectos de la subida del SMI de 2019 (la mayor de la historia) sobre la probabilidad de participar en el mercado laboral.
+A través de este trabajo, se trata de analizar los efectos de la subida del SMI de 2019 (la mayor de la historia) sobre la participación laboral y en el empleo haciendo uso de un modelo de Machine Leanring desarrollado por la técnica de regularización LASSO y una regresión de dobles diferencias.
