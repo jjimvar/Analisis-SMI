@@ -1,5 +1,4 @@
-*cd "C:\Users\Usuario\OneDrive\Escritorio\4to GANE\TFG\MCVL"
-cd "C:\Users\Jjime\OneDrive\Escritorio\4to GANE\TFG\MCVL"
+cd "C:\Users\Stata"
 use "panel-individuos-empresas-2018.dta", clear
 
 *******************************Configuración inicial****************************
