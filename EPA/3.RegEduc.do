@@ -1,5 +1,4 @@
-*cd "C:\Users\Usuario\OneDrive\Escritorio\4to GANE\TFG\EPA"
-cd "C:\Users\Jjime\OneDrive\Escritorio\4to GANE\TFG\EPA"
+cd "C:\Users\Stata"
 use "EPA1819.dta", clear
 
 ****************************0. Configuración inicial****************************
