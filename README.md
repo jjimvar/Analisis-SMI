@@ -62,6 +62,7 @@ Instala los paquetes de Python necesarios ejecutando en una celda de Jupyter:
 
 3. Ejecutar los notebooks:
    - Abre `MCVL/ModeloPrediccion.ipynb` para general el grado de exposición.
+   - Cargar los resultados del mejor modelo `2.cvprov.ster` y `2.cvprov.stxer` en `EPA`.
    - Luego abre `EPA/ModeloDiD.ipynb` para estimar el efecto de la medida.
 ---
 
