@@ -1,11 +1,26 @@
-Esta caperta contien el código utilizado para entrenar el modelo de ML en la Muestra Continua de Vidas Laborales (MCVL) que nos permite estimar la probabilidad de verse afectado por la reforma del SMI de 2019.
+# 📊 Modelo de Predicción de Exposición al SMI
+La forma funcional del modelo logístico entrenado es la siguiente:
 
-1.EstDes provee estadisticas descriptivas de las variables.
+`Prob(Afectadoᵢ = 1 | Xᵢ) = exp(β₀ + ∑ₖ βₖ·Xᵢₖ + ∑ⱼ ∑ₖ γⱼₖ·Xᵢⱼ·Xᵢₖ) / [1 + exp(β₀ + ∑ₖ βₖ·Xᵢₖ + ∑ⱼ ∑ₖ γⱼₖ·Xᵢⱼ·Xᵢₖ)]`
 
-2.comunidades provee los diferentes modelos estimados con efectos fijos por comunidades.
+📌 Donde:
+    - βₖ captura el efecto individual de la variable Xᵢₖ, 
+	- γⱼₖ representa el efecto de la interacción entre Xᵢⱼ y Xᵢₖ con j<k,
+	- y la doble suma ∑ⱼ ∑ₖ ,garantiza que se incluyan todas las combinaciones únicas y ordenadas sin repeticiones.
 
-2.provincias provee los diferentes modelos estimados con efectos fijos por provincias.
+## 🔢 Variables utilizadas
+El modelo se ha entrenado sobre K = 6 variables categóricas clave:
+	- Homᵢ: dummy para el sexo masculino,
+	- Edadᵢ: variable categórica por tramos de 5 años,
+	- Paisnacᵢ: país de nacimiento,
+	- Educᵢ: nivel educativo alcanzado,
+	- Regᵢ: localización geográfica (provincia o comunidad autónoma),
+	- Relabᵢ: antigüedad en la empresa, en meses.
 
-3.CutOffCCAA y 3.CutOffProv provee al probabilidad a partir de la cual se puede definir si un individuo fue afectado o no.
-
-3.Result provee estadísticas varaias para evaaluar el gadro de bondad de los modelos.
+---
+## Resultados Generados
+El notebook principal produce los siguientes archivos de salida:
+- `1.EstDes.xlsx` Estadísticos descriptivos comparando las bases MCVL y EPA
+- `2.cvprov.ster` Modelo entrenado con mayor verosimilitud (formato de Stata)
+- `3.Resultados.xlsx` Tabla resumen con métricas de rendimiento del modelo
+- `3.CutOffOpt.png` Visualización del punto óptimo de corte para clasificación del tratamiento
