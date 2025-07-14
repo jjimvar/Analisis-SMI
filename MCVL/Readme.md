@@ -18,7 +18,7 @@ El modelo se ha entrenado sobre K = 6 variables categóricas clave:
 	- Relabᵢ: antigüedad en la empresa, en meses.
 
 ---
-## Resultados Generados
+## 📈 Resultados Generados
 El notebook principal produce los siguientes archivos de salida:
 - `1.EstDes.xlsx` Estadísticos descriptivos comparando las bases MCVL y EPA
 - `2.cvprov.ster` Modelo entrenado con mayor verosimilitud (formato de Stata)
