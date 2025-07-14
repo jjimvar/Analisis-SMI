@@ -2,6 +2,7 @@
 Este repositorio recoge el código necesario para analizar el efecto que tuvo la histórica subida del Salario Mínimo Interprofesional (SMI) en 2019 sobre dos dimensiones clave del mercado laboral español:
 
 🔹 La probabilidad de participar en el mercado laboral.
+
 🔹 La probabilidad de estar empleado.
 
 En 2019, el SMI en España aumentó un 22,3 %, pasando de 735,90 € a 900 € mensuales en 14 pagas. Este incremento constituyó el mayor aumento interanual desde la recuperación democrática, generando un interés significativo en su análisis económico.
